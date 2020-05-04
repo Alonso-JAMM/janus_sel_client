@@ -8,11 +8,11 @@ opts.set_preference(name="permissions.default.camera", value=1)
 
 
 driver = webdriver.Firefox(options = opts)
-driver.get("https://classickerobel.duckdns.org:8083/")
+driver.get("location")
 username = driver.find_element_by_name("username")
-username.send_keys("default")
+username.send_keys("name")
 password = driver.find_element_by_name("password")
-password.send_keys("123")
+password.send_keys("password")
 password.send_keys(Keys.RETURN)
 
-driver.get("https://classickerobel.duckdns.org:8083/streamer")
+driver.get("location/streamer")
